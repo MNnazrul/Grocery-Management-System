@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MySQL and EJS Example</title>
+</head>
+<body>
+    <h1>Fetched Data</h1>
+<ul>
+    <% if (data) { %>
+        <% console.log(data); %>
+        <% data.forEach(item => { %>
+            <li><%= item.user_name %></li>
+        <% }); %>
+    <% } else { %>
+        <p>No data available.</p>
+    <% } %>
+</ul>
+
+</body>
+</html>
